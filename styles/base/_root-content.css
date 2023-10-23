@@ -27,15 +27,6 @@ body{
 	margin: 0;
 }
 
-@supports selector(:focus-visible){
-	*:focus{
-	outline:none;
-	}
-	*:focus-visible{
-	outline:2px solid var(--geode);
-	}        
-}
-
 .hidden, [hidden] {
  display: none !important;
 }
@@ -49,4 +40,9 @@ body{
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+
+.scrollable{
+	overflow:auto;
+	width:100%;
 }
